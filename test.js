@@ -1,16 +1,14 @@
-// the first alert
-alert("Hello, world!");
-// the second alert
-alert("Hello Again");
+var youLikeMeat = false;
+var myNum = 8;
 
-var myVar = "tomek";
+if (myNum == 10){
 
-document.write(myVar);
-
-console.log(myVar);
+    document.write("myNum is equal to 10");
 
 
+} else{
+    document.write("myNum is not equal to 10");
 
-
+}
 
 
