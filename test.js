@@ -1,19 +1,24 @@
 
-var myCar3 = {
+
+var Car = function(maxSpeed, driver){
+
+    this.maxSPeed = maxSpeed;
+    this.driver = driver;
+    this.drive = function(speed, time){
+        console.log(speed * time);
+    };
+    this.logDriver =    function() {
+        console.log("driver name is " + this.driver);
+    };    
+
+}
 
 
-    maxSpeed: 70,
-    driver: "Tomek",
-    drive: function(speed, time){
-         console.log(speed * time);
-        },
-        logDriver: function() {
-            console.log("driver name is " + this.driver);
-        }
+var myCar = new Car(70, "ninja Man");
+var myCar2 = new Car(50, "TOmek Man");
+var myCar3 = new Car(90, "damn Man");
+var myCar4 = new Car(20, "fejk Man");
 
 
-};
- myCar3.logDriver();   
- console.log(myCar3.maxSpeed);
- myCar3.drive(50, 3);
-
+myCar.drive(30,5);
+myCar3.logDriver();
