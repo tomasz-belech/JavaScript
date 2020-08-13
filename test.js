@@ -1,4 +1,6 @@
-var content = document.getElementById("content");
+function setUpEevents(){
+
+    var content = document.getElementById("content");
 var button = document.getElementById("show-more");
 
 button.onclick = function(){
@@ -13,5 +15,15 @@ button.onclick = function(){
         button.innerHTML = "Show Less";
 
     }
+
+  };
+
+}
+
+
+
+window.onload = function(){
+
+    setUpEevents();
 
 };
