@@ -1,6 +1,13 @@
-var a = 5;
+var a = 6;
 var b = 5;
 
-console.log(a + b);
+if (isNaN(a)){
 
-console.log(Math.max(7, 4, 9, 8));
+    console.log("that aint even a number, thickie");
+
+} else{
+
+console.log("mearing of life is " + (a + b));
+
+}
+
